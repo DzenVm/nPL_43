@@ -1,0 +1,91 @@
+.hero {
+  padding-block: var(--space-5) var(--space-5);
+  background:
+    radial-gradient(ellipse at top right, color-mix(in srgb, var(--color-accent) 10%, transparent), transparent 60%),
+    var(--color-bg);
+  border-bottom: 1px solid var(--color-line);
+}
+
+.inner {
+  max-width: 52rem;
+}
+
+.kicker {
+  font-size: var(--step-fine);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-ink-faint);
+  margin-bottom: var(--space-2);
+}
+
+.title {
+  font-size: var(--step-h1);
+  max-width: 18ch;
+}
+
+.lede {
+  margin-top: var(--space-3);
+  font-size: var(--step-lede);
+  color: var(--color-ink-soft);
+  max-width: var(--measure);
+}
+
+.seasonCard {
+  margin-top: var(--space-4);
+  background: var(--color-card);
+  border: 1px solid var(--color-line);
+  border-left: 4px solid var(--color-accent);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  box-shadow: var(--shadow-card);
+  max-width: var(--measure);
+}
+
+.seasonLine {
+  font-size: var(--step-body);
+}
+
+.seasonMeta {
+  margin-top: var(--space-1);
+  font-size: var(--step-fine);
+  color: var(--color-ink-faint);
+}
+
+.ctaRow {
+  margin-top: var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.3rem;
+  border-radius: var(--radius);
+  font-size: var(--step-fine);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid var(--color-ink);
+}
+
+.ctaPrimary {
+  background: var(--color-ink);
+  color: var(--color-bg);
+}
+
+.ctaPrimary:hover {
+  background: var(--color-rust);
+  border-color: var(--color-rust);
+}
+
+.ctaSecondary {
+  background: transparent;
+  color: var(--color-ink);
+  border-color: var(--color-line);
+}
+
+.ctaSecondary:hover {
+  border-color: var(--color-ink);
+}

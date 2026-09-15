@@ -1,0 +1,60 @@
+.wrapper {
+  padding-block: var(--space-5) var(--space-6);
+}
+
+.updated {
+  color: var(--color-ink-faint);
+  font-size: var(--step-fine);
+  margin-bottom: var(--space-3);
+}
+
+.title {
+  font-size: var(--step-h1);
+  max-width: 24ch;
+}
+
+.body {
+  margin-top: var(--space-4);
+  max-width: var(--measure);
+}
+
+.body h2 {
+  font-size: var(--step-h3);
+  margin-top: var(--space-4);
+  margin-bottom: var(--space-2);
+}
+
+.body h2:first-child {
+  margin-top: 0;
+}
+
+.body p {
+  color: var(--color-ink-soft);
+}
+
+.body ul {
+  margin-top: var(--space-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.body li {
+  list-style: none;
+  position: relative;
+  padding-left: 1.4rem;
+  color: var(--color-ink-soft);
+}
+
+.body li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--color-rust);
+}
+
+.body a {
+  color: var(--color-ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

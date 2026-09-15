@@ -1,0 +1,32 @@
+.columns {
+  margin-top: var(--space-4);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
+  gap: var(--space-4);
+}
+
+.colHeading {
+  font-size: var(--step-h3);
+  margin-bottom: var(--space-2);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.list li {
+  list-style: none;
+  position: relative;
+  padding-left: 1.3rem;
+  color: var(--color-ink-soft);
+}
+
+.list li::before {
+  content: "·";
+  position: absolute;
+  left: 0.2rem;
+  color: var(--color-accent);
+  font-weight: 700;
+}
