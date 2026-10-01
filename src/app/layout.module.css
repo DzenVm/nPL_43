@@ -15,8 +15,29 @@
   min-height: 4rem;
 }
 
-.brandSlot {
-  width: 1.5rem;
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--color-ink);
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brandMark {
+  display: grid;
+  width: 1.7rem;
+  aspect-ratio: 1;
+  place-items: center;
+  border: 1px solid var(--color-rust);
+  border-radius: 50%;
+  color: var(--color-rust);
+  font-family: var(--font-public-sans), sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
 }
 
 .nav {

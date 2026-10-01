@@ -1,9 +1,7 @@
 # Serwis informacyjny — przeglądarkowa gra strategiczna (PL)
 
-SSR-owy serwis na Next.js 16 (App Router), przygotowany pod kampanię Google Ads
-w geo Polska, jednojęzyczny (PL). Opisuje jednoosobową przeglądarkową grę
-strategiczną — bez marki, bez logotypu, bez nazwy własnej produktu (zgodnie z
-założeniami projektu).
+SSR-owy serwis na Next.js 16 (App Router), jednojęzyczny (PL). Opisuje
+jednoosobową przeglądarkową grę strategiczną pod nazwą „Posterunek”.
 
 ## Stos technologiczny
 
@@ -36,19 +34,17 @@ założeniami projektu).
 - `src/content/` — cała treść tekstowa wydzielona z komponentów.
 - `src/content/site.ts` — **jedyne miejsce** z adresem domeny (patrz niżej).
 
-## Domena — do podmiany
+## Domena
 
-Docelowa domena nie jest jeszcze znana. Cały serwis odwołuje się do niej przez
-jedną zmienną środowiskową:
+Domyślną domeną serwisu jest `blimjoo.biz`. Dla lokalnych preview można ją
+nadpisać przez zmienną środowiskową:
 
 ```
-NEXT_PUBLIC_SITE_DOMAIN=przyklad-docelowa-domena.pl
+NEXT_PUBLIC_SITE_DOMAIN=preview.example.com
 ```
 
-Dopóki zmienna nie zostanie ustawiona, używana jest wartość zastępcza
-`twoja-domena.pl` (metadane, `sitemap.xml`, adres kontaktowy, dane
-strukturalne). Wystarczy ustawić zmienną w panelu Vercel (Project Settings →
-Environment Variables) i zrobić redeploy — nic w kodzie nie wymaga zmian.
+Bez zmiennej środowiskowej aplikacja używa `blimjoo.biz` w metadanych,
+`sitemap.xml`, danych strukturalnych i adresie kontaktowym.
 
 ## Uruchomienie lokalne
 
@@ -82,12 +78,11 @@ automatycznie rozpozna Next.js.
 
 1. Połącz repozytorium z projektem na Vercel (Import Project → wskaż to
    repozytorium i gałąź).
-2. W Environment Variables ustaw `NEXT_PUBLIC_SITE_DOMAIN` na docelową
-   domenę, gdy tylko będzie znana (na start można zostawić puste — serwis
-   zadziała z wartością zastępczą).
-3. Po podłączeniu domeny w zakładce Domains projektu Vercel, zaktualizuj
-   zmienną `NEXT_PUBLIC_SITE_DOMAIN` i zrób redeploy, aby metadane,
-   `sitemap.xml` i dane strukturalne wskazywały właściwy adres.
+2. Dodaj `blimjoo.biz` oraz `www.blimjoo.biz` w zakładce Domains projektu
+   Vercel i skonfiguruj wskazane tam rekordy DNS u rejestratora.
+3. Ustaw `NEXT_PUBLIC_SITE_DOMAIN=blimjoo.biz` w ustawieniach środowiska
+   produkcyjnego i zrób redeploy, aby metadane, `sitemap.xml` i dane
+   strukturalne wskazywały właściwy adres.
 4. Build command: `next build` (domyślny, wykryty automatycznie).
    Node.js ≥ 20.9 (patrz `engines` w `package.json`).
 
@@ -100,8 +95,8 @@ statyczny/SSR bez własnego backendu i bazy danych.
   serwisu i regulamin opisują wyłącznie deterministyczną mechanikę logistyczną.
 - Jasno opisany charakter serwisu (informacyjny, dotyczący projektu w
   rozwoju), dostępna polityka prywatności, regulamin i dane kontaktowe.
-- Brak elementów sugerujących automatyczne/szablonowe wygenerowanie treści —
-  opisy pisane indywidualnie, z konkretnymi, niepowtarzalnymi detalami.
+- Autorska nazwa, znak typograficzny i konkretne opisy mechanik oraz świata
+  gry.
 - Wszystkie odnośniki CTA na stronie głównej prowadzą do istniejących sekcji
   tej samej strony lub do `/kontakt` — brak martwych linków i brak obietnic
   funkcji, które nie istnieją w serwisie.

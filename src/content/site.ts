@@ -4,7 +4,7 @@
  * zapisanego na sztywno adresu.
  */
 export const SITE_DOMAIN =
-  process.env.NEXT_PUBLIC_SITE_DOMAIN?.trim() || "twoja-domena.pl";
+  process.env.NEXT_PUBLIC_SITE_DOMAIN?.trim() || "blimjoo.biz";
 
 export const SITE_URL = `https://${SITE_DOMAIN}`;
 export const CONTACT_EMAIL = `kontakt@${SITE_DOMAIN}`;

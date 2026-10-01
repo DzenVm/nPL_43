@@ -22,7 +22,7 @@ const publicSans = Public_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Przeglądarkowa gra strategiczna dla jednego gracza",
+    default: "Posterunek — spokojna strategia na skraju mapy",
     template: "%s",
   },
   description:
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE_LOCALE,
     url: SITE_URL,
-    title: "Przeglądarkowa gra strategiczna dla jednego gracza",
+    title: "Posterunek — spokojna strategia na skraju mapy",
     description:
-      "Samotny posterunek handlowy, mapa z białą plamą i cztery pory roku rozłożone na tygodnie planowania. Bez instalacji, bez rywalizacji z innymi graczami.",
-    siteName: SITE_DOMAIN,
+      "Prowadź posterunek na skraju mapy, planuj zapasy i odkrywaj trakt w spokojnej, jednoosobowej strategii.",
+    siteName: "Posterunek",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Przeglądarkowa gra strategiczna dla jednego gracza",
+    title: "Posterunek — spokojna strategia na skraju mapy",
     description:
-      "Samotny posterunek handlowy, mapa z białą plamą i cztery pory roku rozłożone na tygodnie planowania.",
+      "Prowadź posterunek na skraju mapy, planuj zapasy i odkrywaj trakt.",
   },
   robots: {
     index: true,
@@ -69,7 +69,10 @@ export default function RootLayout({
         </a>
         <header className={styles.header}>
           <div className={`container ${styles.headerInner}`}>
-            <div className={styles.brandSlot} aria-hidden="true" />
+            <Link className={styles.brand} href="/" aria-label="Posterunek — strona główna">
+              <span className={styles.brandMark} aria-hidden="true">P</span>
+              <span>Posterunek</span>
+            </Link>
             <nav aria-label="Nawigacja główna" className={styles.nav}>
               <Link href="/#mechanika">Mechanika</Link>
               <Link href="/#notatki">Notatki z rozwoju</Link>

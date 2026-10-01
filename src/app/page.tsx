@@ -14,7 +14,7 @@ import { SITE_URL } from "@/content/site";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Game",
-  name: "Przeglądarkowa gra strategiczna dla jednego gracza",
+  name: "Posterunek",
   description:
     "Gra przeglądarkowa dla jednego gracza, w której prowadzi się posterunek handlowy na skraju mapy: zapasy, zwiad i korespondencja z sąsiadami rozłożone na cztery pory roku.",
   genre: ["Strategia", "Symulacja"],
