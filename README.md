@@ -1,7 +1,7 @@
 # Serwis informacyjny — przeglądarkowa gra strategiczna (PL)
 
 SSR-owy serwis na Next.js 16 (App Router), jednojęzyczny (PL). Opisuje
-jednoosobową przeglądarkową grę strategiczną pod nazwą „Posterunek”.
+jednoosobową przeglądarkową grę strategiczną pod nazwą „Blimjoo”.
 
 ## Stos technologiczny
 
@@ -95,8 +95,8 @@ statyczny/SSR bez własnego backendu i bazy danych.
   serwisu i regulamin opisują wyłącznie deterministyczną mechanikę logistyczną.
 - Jasno opisany charakter serwisu (informacyjny, dotyczący projektu w
   rozwoju), dostępna polityka prywatności, regulamin i dane kontaktowe.
-- Autorska nazwa, znak typograficzny i konkretne opisy mechanik oraz świata
-  gry.
+- Spójna nazwa Blimjoo, znak typograficzny i konkretne opisy mechanik oraz
+  świata gry.
 - Wszystkie odnośniki CTA na stronie głównej prowadzą do istniejących sekcji
   tej samej strony lub do `/kontakt` — brak martwych linków i brak obietnic
   funkcji, które nie istnieją w serwisie.

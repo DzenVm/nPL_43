@@ -2,8 +2,8 @@ import type { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "Posterunek — spokojna strategia na skraju mapy",
-    short_name: "Posterunek",
+    name: "Blimjoo — spokojna strategia na skraju mapy",
+    short_name: "Blimjoo",
     description:
       "Serwis informacyjny opisujący przeglądarkową grę strategiczną dla jednego gracza.",
     start_url: "/",

@@ -22,8 +22,8 @@ const publicSans = Public_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Posterunek — spokojna strategia na skraju mapy",
-    template: "%s",
+    default: "Blimjoo — spokojna strategia na skraju mapy",
+    template: "%s | Blimjoo",
   },
   description:
     "Prowadzisz samotny posterunek handlowy na skraju mapy: zapasy, zwiad i korespondencja z sąsiadami rozłożone na cztery pory roku. Gra przeglądarkowa, jeden gracz, bez instalacji.",
@@ -32,14 +32,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: SITE_LOCALE,
     url: SITE_URL,
-    title: "Posterunek — spokojna strategia na skraju mapy",
+    title: "Blimjoo — spokojna strategia na skraju mapy",
     description:
       "Prowadź posterunek na skraju mapy, planuj zapasy i odkrywaj trakt w spokojnej, jednoosobowej strategii.",
-    siteName: "Posterunek",
+    siteName: "Blimjoo",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Posterunek — spokojna strategia na skraju mapy",
+    title: "Blimjoo — spokojna strategia na skraju mapy",
     description:
       "Prowadź posterunek na skraju mapy, planuj zapasy i odkrywaj trakt.",
   },
@@ -69,9 +69,9 @@ export default function RootLayout({
         </a>
         <header className={styles.header}>
           <div className={`container ${styles.headerInner}`}>
-            <Link className={styles.brand} href="/" aria-label="Posterunek — strona główna">
-              <span className={styles.brandMark} aria-hidden="true">P</span>
-              <span>Posterunek</span>
+            <Link className={styles.brand} href="/" aria-label="Blimjoo — strona główna">
+              <span className={styles.brandMark} aria-hidden="true">B</span>
+              <span>Blimjoo</span>
             </Link>
             <nav aria-label="Nawigacja główna" className={styles.nav}>
               <Link href="/#mechanika">Mechanika</Link>
